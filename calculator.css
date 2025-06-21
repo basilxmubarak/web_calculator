@@ -205,13 +205,9 @@ button.func {
 /* Responsive styles */
 /* Mobile & Tablet Responsive Fix */
 @media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-
   body {
     height: auto;
-    padding: 10px;
+    padding: 20px;
     margin: 0;
   }
 
@@ -229,59 +225,55 @@ button.func {
   }
 
   .display-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .display {
-    flex: 1;
-    margin-right: 10px;
-    width: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
     overflow-x: auto;
   }
 
   .history-arrows {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
   }
 
   .arrow {
-    margin: 2px 0;
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 
   .history-wrapper {
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   #historyToggle {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    margin-right: 10px;
-    margin-top: 0;
-    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
     border: none;
+    border-radius: 50%;
+    background-color: #ddd;
     cursor: pointer;
   }
 
   .buttons {
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
   }
 
   button {
     padding: 14px;
     font-size: 18px;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .mode {
@@ -291,7 +283,7 @@ button.func {
 
   .history-panel {
     position: fixed;
-    top: 70px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -300,3 +292,4 @@ button.func {
     border-radius: 10px;
   }
 }
+

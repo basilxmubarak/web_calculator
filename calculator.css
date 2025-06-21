@@ -250,31 +250,23 @@ button.func {
     font-size: 18px;
   }
 
-   .history-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start !important; /* Force align to left */
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 0;
-  }
+  .history-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;  /* Align to the left */
+  padding-left: 10px;           /* Optional: spacing from the edge */
+  margin-bottom: 10px;
+}
 
 
 
 
 #historyToggle {
-  position: static !important;
-  width: 40px;
-  height: 40px;
-  font-size: 22px;
-  border-radius: 50%;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-  margin-top: 5px;
+  position: relative;
+  margin: 0;                    /* Reset margins */
+  left: 0;                      /* Align to left */
+  top: 0;
 }
-
 
   .buttons {
     grid-template-columns: repeat(4, 1fr);

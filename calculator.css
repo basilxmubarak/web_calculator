@@ -250,15 +250,16 @@ button.func {
     font-size: 18px;
   }
 
- .history-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;  /* Align to the left */
-  margin-top: 5px;
-  margin-bottom: 10px;
-  position: static;
-  padding-left: 10px; /* Optional: add some spacing from left edge */
-}
+   .history-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start !important; /* Force align to left */
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+
 
 
 

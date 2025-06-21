@@ -250,24 +250,23 @@ button.func {
     font-size: 18px;
   }
 
-  ..history-wrapper {
-  width: 100%;
+.history-wrapper {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 5px;
+  justify-content: flex-start;  
+  width: 100%;              
   margin-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 10px;            
 }
-
 
 
 
 #historyToggle {
-  position: relative !important; 
-  top: 0 !important;
-  right: 0 !important;
+  position: relative !important;  /* Remove absolute positioning */
+  top: auto !important;
+  right: auto !important;
   margin: 0;
 }
+
 
 
   .buttons {

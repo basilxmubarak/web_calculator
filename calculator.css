@@ -238,14 +238,13 @@ button.func {
   .display {
     flex: 1;
     margin-right: 10px;
-    margin-bottom: 0;
     width: auto;
     overflow-x: auto;
   }
 
   .history-arrows {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -257,6 +256,7 @@ button.func {
   }
 
   .history-wrapper {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     margin: 10px 0;
@@ -266,8 +266,11 @@ button.func {
     width: 30px;
     height: 30px;
     font-size: 18px;
-    margin: 0;
-    position: relative;
+    margin-right: 10px;
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   .buttons {
@@ -297,4 +300,3 @@ button.func {
     border-radius: 10px;
   }
 }
-

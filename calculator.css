@@ -205,10 +205,10 @@ button.func {
     align-items: center;
   }
 
-  .calculator {
-    width: 90%;
-    padding: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   .calculator {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .display-container {

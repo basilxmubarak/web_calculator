@@ -205,18 +205,22 @@ button.func {
 /* Responsive styles */
 /* Mobile & Tablet Responsive Fix */
 @media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
   .calculator-wrapper {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    width: 100%;
   }
 
   .calculator {
     width: 100%;
     max-width: 400px;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -229,17 +233,16 @@ button.func {
     margin-right: 0;
     margin-bottom: 10px;
     width: 100%;
-    overflow-x: auto;
   }
 
   .history-arrows {
     flex-direction: row;
     justify-content: center;
-    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .arrow {
-    margin: 2px 5px;
+    margin: 0 5px;
     width: 40px;
     height: 40px;
     font-size: 18px;
@@ -247,19 +250,18 @@ button.func {
 
   .buttons {
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
   }
 
   button {
-    padding: 16px;
+    padding: 14px;
     font-size: 18px;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .mode {
     font-size: 16px;
     margin-bottom: 10px;
-    text-align: center;
   }
 
   #historyToggle {
@@ -270,12 +272,13 @@ button.func {
 
   .history-panel {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
     max-height: 300px;
     z-index: 100;
+    border-radius: 10px;
   }
 }
 

@@ -81,4 +81,7 @@ This calculator runs entirely in your browser and does **not require an internet
 ### Desktop View
 
 ![web calculator desktopview](https://github.com/user-attachments/assets/3f5cbce6-42e9-4dff-b26b-f56b5d12493e)
+### Mobile View
+![web calculator mobile view](https://github.com/user-attachments/assets/7b6319fb-5f9f-4f83-b871-6c35c29e7df3)
+
 

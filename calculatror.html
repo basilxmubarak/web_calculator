@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator-wrapper">
+
+    <!-- History Panel -->
+    <div id="historyPanel" class="history-panel">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+      <button onclick="clearFullHistory()" class="clear-btn">Clear</button>
+    </div>
+
+    <div class="calculator">
+
+      <!-- Display Section -->
+      <div class="display-container">
+        <div class="display">
+          <div id="inputDisplay"></div>
+          <div id="resultDisplay"></div>
+        </div>
+        <div class="history-arrows">
+          <button class="arrow" onclick="previousHistory()">▲</button>
+          <button class="arrow" onclick="nextHistory()">▼</button>
+        </div>
+      </div>
+
+      <!-- 🕒 History Button Below Display -->
+      <div class="history-wrapper">
+        <button id="historyToggle" onclick="toggleHistory()" title="History">🕒</button>
+      </div>
+
+      <div class="mode">
+        <label><input type="radio" name="mode" value="deg" checked> Degree</label>
+        <label><input type="radio" name="mode" value="rad"> Radian</label>
+      </div>
+
+      <div class="buttons">
+        <!-- Buttons (unchanged) -->
+        <button class="func" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="appendValue('/')">/</button>
+        <button class="operator" onclick="appendValue('*')">x</button>
+        <button class="func" onclick="backspace()">⌫</button>
+
+        <button class="operator" onclick="appendValue('√(')">√</button>
+        <button class="operator" onclick="appendValue('sin(')">sin</button>
+        <button class="operator" onclick="appendValue('cos(')">cos</button>
+        <button class="operator" onclick="appendValue('tan(')">tan</button>
+
+        <button class="operator" onclick="appendValue('(')">(</button>
+        <button class="operator" onclick="appendValue(')')">)</button>
+        <button class="operator" onclick="appendValue('%')">%</button>
+        <button class="operator" onclick="appendValue('^')">xʸ</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('-')">-</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="equal" onclick="calculateResult()">=</button>
+
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button class="decimal" onclick="appendValue('.')">.</button>
+        <button class="operator" onclick="appendValue('π')">π</button>
+      </div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

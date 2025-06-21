@@ -250,25 +250,28 @@ button.func {
     font-size: 18px;
   }
 
-  /* ✅ Place history icon below display */
   .history-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    position: static;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: static;
+}
 
-  #historyToggle {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    border-radius: 50%;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-  }
+
+#historyToggle {
+  position: static !important;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 
   .buttons {
     grid-template-columns: repeat(4, 1fr);

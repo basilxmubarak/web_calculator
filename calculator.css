@@ -122,7 +122,7 @@ button.func {
 .history-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 0 10px 0; /* Top and bottom spacing */
+  margin: 10px 0 10px 0; 
 }
 
 
@@ -253,15 +253,15 @@ button.func {
 .history-wrapper {
   width: 100%;
   display: flex;
-  justify-content: flex-start;  /* Aligns content to the left */
-  margin: 0 0 10px 0;
+  justify-content: flex-start; 
+  margin: 0 0 0 0;
 }
 
 
 
 #historyToggle {
-  position: static !important;  /* Override absolute positioning */
-  margin-left: 10px;            /* Optional: some space from the edge */
+  position: static !important; 
+  margin-left: 10px;           
 }
 
 

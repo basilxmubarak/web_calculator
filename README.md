@@ -79,5 +79,6 @@ This calculator runs entirely in your browser and does **not require an internet
 ## 📸 Screenshots
 
 ### Desktop View
-![Calculator Desktop](![image](https://github.com/user-attachments/assets/0ab8c12a-ff51-4389-a1da-98125bfd2af7)
-)
+
+![web calculator desktopview](https://github.com/user-attachments/assets/3f5cbce6-42e9-4dff-b26b-f56b5d12493e)
+

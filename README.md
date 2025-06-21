@@ -76,3 +76,8 @@ You can also use your keyboard:
 
 ## 🔒 Note
 This calculator runs entirely in your browser and does **not require an internet connection** once loaded. No data is sent or stored externally.
+## 📸 Screenshots
+
+### Desktop View
+![Calculator Desktop](![image](https://github.com/user-attachments/assets/0ab8c12a-ff51-4389-a1da-98125bfd2af7)
+)

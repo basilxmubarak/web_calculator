@@ -205,9 +205,14 @@ button.func {
 /* Responsive styles */
 /* Mobile & Tablet Responsive Fix */
 @media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     height: auto;
-    padding: 20px;
+    padding: 10px;
+    margin: 0;
   }
 
   .calculator-wrapper {
@@ -221,53 +226,64 @@ button.func {
     max-width: 400px;
     padding: 15px;
     border-radius: 15px;
-    box-sizing: border-box;
   }
 
   .display-container {
-    flex-direction: column;
-    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .display {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 100%;
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+    overflow-x: auto;
   }
 
   .history-arrows {
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .arrow {
-    margin: 0 5px;
-    width: 40px;
-    height: 40px;
+    margin: 2px 0;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .history-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+  }
+
+  #historyToggle {
+    width: 30px;
+    height: 30px;
     font-size: 18px;
+    margin: 0;
+    position: relative;
   }
 
   .buttons {
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 10px;
   }
 
   button {
     padding: 14px;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 12px;
   }
 
   .mode {
     font-size: 16px;
     margin-bottom: 10px;
-  }
-
-  #historyToggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
   }
 
   .history-panel {

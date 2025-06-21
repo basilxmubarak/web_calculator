@@ -250,14 +250,16 @@ button.func {
     font-size: 18px;
   }
 
-  .history-wrapper {
+ .history-wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;  /* Align to the left */
   margin-top: 5px;
   margin-bottom: 10px;
   position: static;
+  padding-left: 10px; /* Optional: add some spacing from left edge */
 }
+
 
 
 #historyToggle {

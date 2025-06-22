@@ -59,8 +59,9 @@ body {
 }
 
 .arrow {
+  padding-left:10px;
   font-size: 16px;
-  width: 30px;
+  width: 35px;
   height: 30px;
   background: #ddd;
   border: none;

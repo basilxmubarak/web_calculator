@@ -85,4 +85,5 @@ This calculator runs entirely in your browser and does **not require an internet
 ![web calculator mobile view](https://github.com/user-attachments/assets/7b6319fb-5f9f-4f83-b871-6c35c29e7df3)
 
 ##Website Link
+
 https://basilxmubarak.github.io/web_calculator/
